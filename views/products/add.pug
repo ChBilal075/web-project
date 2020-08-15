@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    h1 Fill the form to Enter a New Product
+    <form action="/products/add" method="POST">
+    <div class="form-group">
+    <label for="name">Product ID</label>
+    <input type="text" class="form-control" id="id" aria-describedby="help" name="id">
+    </div>
+    <div class="form-group">
+    <label for="name">Product Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="help" name="name">
+    </div>
+    <div class="form-group">
+    <label for="price">Product Price</label>
+    <input type="text" class="form-control" id="price" name="price">
+    </div>
+    <input type="submit" class="btn btn-primary" value="submit">
+    </form>

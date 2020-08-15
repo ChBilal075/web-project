@@ -1,0 +1,17 @@
+extends ../layout
+
+block content     
+    form(action="/products/update/"+product._id method="post")
+        h1 Fill the Form to Update Record
+        .form-group
+            label(for="Id") Product Id
+            input(type="text", class="form-control",  name="Id" value=product.id)
+        
+
+        .form-group
+            label(for="name") Product Name
+            input(type="text" class="form-control"  name="name" value=product.name)
+        .form-group
+            label(for="price") Product Price
+            input(type="text", class="form-control",  name="price" value=product.price)
+        input(type="submit" class="btn btn-primary")
